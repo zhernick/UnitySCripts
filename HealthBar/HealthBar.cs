@@ -11,15 +11,6 @@ public class HealthBar: MonoBehaviour
     [SerializeField] private float duration;
     [SerializeField] private bool clicked;
 
-    private void Awake()
-    {
-
-    }
-
-    private void Start()
-    {
-    }
-
     public void SetHealth(int maxHealth, int currentHealth)
     {
         hpBarSlider.maxValue = maxHealth;
@@ -48,17 +39,7 @@ public class HealthBar: MonoBehaviour
             }
         }
     }
-
-    public void TakeDamage(int damage)
-    {
-
-        //UpdateSliderValues();
-        //ResetSmoothTimer();
-        clicked = true;
-    }
     
-    
-
     public void ResetSmoothTimer(bool value)
     {
         timeElapsed = 0;
